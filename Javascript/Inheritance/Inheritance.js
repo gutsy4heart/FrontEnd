@@ -70,13 +70,12 @@ class Team {
     }
 }
 
-// Пример использования
 const team = new Team();
 
 team.addPlayers(
-    new FootbalPlayer('Rovshan', 25, false),
-    new FootbalPlayer('Rauf', 26, true),
-    new FootbalPlayer('Ibragim', 24, false),
+    new FootbalPlayer('Murad', 25, false),
+    new FootbalPlayer('Alex', 26, true),
+    new FootbalPlayer('Denis', 24, false),
 );
 
 team.players[1] = 'HACKED';
