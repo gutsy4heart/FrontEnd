@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="log.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Sign Up Form</legend>
+            <fieldset>
+                <legend>Email</legend>
+                <input type="email" placeholder="your@email.com" name="email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Username</legend>
+                <input type="text" placeholder="Username" name="username" required>
+            </fieldset>
+            <fieldset>
+                <legend>Password</legend>
+                <input type="password" placeholder="Password" name="password" required>
+            </fieldset>
+            <fieldset>
+                <legend>Confirm Password</legend>
+                <input type="password" placeholder="Confirm password" data-name="confirm-password" required>
+            </fieldset>
+            <fieldset>
+                <legend>Preferred Theme</legend>
+                <label>
+                    <input type="radio" name="theme" value="dark" name="theme"> Dark
+                </label>
+                <label>
+                    <input type="radio" name="theme" value="light" name="theme"> Light
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Plugins</legend>
+                <label>
+                    <input type="checkbox" name="plugins" value="id-1" name="plugin"> Plugin 1
+                </label>
+                <label>
+                    <input type="checkbox" name="plugins" value="id-2" name="plugin"> Plugin 2
+                </label>
+            </fieldset>
+            <button type="submit">Sign Up</button>
+        </fieldset>
+    </form>
+</body>
+</html>
