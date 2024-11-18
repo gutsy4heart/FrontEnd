@@ -13,16 +13,20 @@ ctx.fillStyle = 'white'
 
 const mouthWidth = Math.PI / 4;
 const mouthWidthHalf = mouthWidth / 2;
-// ctx.fillStyle= 'red';
-ctx.fillStyle = 'yellow';
-ctx.beginPath();
-ctx.arc(200, 200, 50, - mouthWidthHalf, Math.PI - mouthWidthHalf, true);
-ctx.closePath();
-ctx.fill();
 
-// ctx.fillStyle = 'yellow';
-ctx.beginPath();
-ctx.arc(200, 200, 50, mouthWidthHalf, Math.PI + mouthWidthHalf);
-ctx.closePath();
-ctx.fill();
+const sector = (color, fillAngle = 0, turnAngle = 0) =>{
+    const fillAngleHalf = fillAngle /2;
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(200, 200, 50, fillAngleHalf,Math.PI + fillAngleHalf);
+    ctx.closePath();
+    ctx.fill();
 
+    ctx.fillStyle = 'yellow';
+    ctx.beginPath();
+    ctx.arc(200, 200, 50, -fillAngleHalf, Math.PI- fillAngleHalf, true );
+    ctx.closePath();
+    ctx.fill();
+
+}
+sector('red', Math.PI / 2);
